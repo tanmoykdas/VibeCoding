@@ -1,5 +1,17 @@
 # Project 1: Moneyco
 
+## Screenshots
+
+<p align="center">
+	<img src="Moneyco/assets/screenshots/photo_2026-03-16_03-11-25.jpg" alt="Home Screen" width="220" />
+	<img src="Moneyco/assets/screenshots/photo_2026-03-15_17-49-28.jpg" alt="Add Transaction Screen" width="220" />
+</p>
+
+<p align="center">
+	<img src="Moneyco/assets/screenshots/photo_2026-03-16_03-11-29.jpg" alt="Profile Screen" width="220" />
+	<img src="Moneyco/assets/screenshots/photo_2026-03-16_03-11-39.jpg" alt="Profile Dark Mode Screen" width="220" />
+</p>
+
 Moneyco is a personal money management app built with Flutter.  
 It helps track income and expenses, view analytics, manage budget goals, and keep data synced using Firebase.
 
@@ -60,18 +72,6 @@ Main Flutter app location: [Moneyco](Moneyco)
 - `fl_chart`
 - `shared_preferences`, `flutter_secure_storage`
 - `intl`, `google_fonts`, `uuid`, `connectivity_plus`, `shimmer`
-
-## Screenshots
-
-> Added 4 project UI screenshots to README.
-
-| Home | Add Transaction |
-|---|---|
-| ![Home Screen](Moneyco/assets/screenshots/photo_2026-03-16_03-11-25.jpg) | ![Add Transaction Screen](Moneyco/assets/screenshots/photo_2026-03-15_17-49-28.jpg) |
-
-| Profile | Profile (Dark Mode) |
-|---|---|
-| ![Profile Screen](Moneyco/assets/screenshots/photo_2026-03-16_03-11-29.jpg) | ![Profile Dark Mode Screen](Moneyco/assets/screenshots/photo_2026-03-16_03-11-39.jpg) |
 
 ## Run Locally
 
