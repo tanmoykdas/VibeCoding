@@ -1,0 +1,60 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isValidTransactionData() {
+      return request.resource.data.keys().hasOnly([
+               'amount',
+               'type',
+               'category',
+               'note',
+               'date',
+             ]) &&
+          request.resource.data.keys().hasAll([
+            'amount',
+            'type',
+            'category',
+            'date',
+          ]) &&
+          request.resource.data.amount is number &&
+          request.resource.data.amount > 0 &&
+          request.resource.data.type in ['income', 'expense'] &&
+          request.resource.data.category is string &&
+          request.resource.data.category.size() > 0 &&
+          request.resource.data.category.size() <= 40 &&
+          (!('note' in request.resource.data) ||
+              (request.resource.data.note is string &&
+                  request.resource.data.note.size() <= 160)) &&
+          request.resource.data.date is timestamp;
+    }
+
+    function isValidBudgetData() {
+      return request.resource.data.keys().hasOnly(['value']) &&
+          request.resource.data.value is number &&
+          request.resource.data.value >= 0;
+    }
+
+    match /users/{userId}/transactions/{transactionId} {
+      allow read, delete: if isOwner(userId);
+      allow create, update: if isOwner(userId) && isValidTransactionData();
+    }
+
+    match /users/{userId}/settings/{settingId} {
+      allow read, delete: if isOwner(userId);
+      allow create, update: if isOwner(userId) &&
+          settingId in ['monthlyLimit', 'dailyGoal'] &&
+          isValidBudgetData();
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

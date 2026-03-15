@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "486434722661",
+    "project_id": "moneyco-86d7c",
+    "storage_bucket": "moneyco-86d7c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486434722661:android:261ab57ea72c2ae018878c",
+        "android_client_info": {
+          "package_name": "com.tanmoy.moneyco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "486434722661-ja1vfb8cpdf3l7v0v5o3rk5ic62kfjsr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tanmoy.moneyco",
+            "certificate_hash": "f45a15040a2df77741e3a2f3210a967bbcc864c0"
+          }
+        },
+        {
+          "client_id": "486434722661-vpmlr6loobt8g5mnnthb3rhrfemlrrah.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69oMTVd0WXuP063vh3zbdtrjvWfloFBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "486434722661-vpmlr6loobt8g5mnnthb3rhrfemlrrah.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

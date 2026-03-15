@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486434722661",
+    "project_id": "moneyco-86d7c",
+    "storage_bucket": "moneyco-86d7c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486434722661:android:261ab57ea72c2ae018878c",
+        "android_client_info": {
+          "package_name": "com.tanmoy.moneyco"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB69oMTVd0WXuP063vh3zbdtrjvWfloFBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
