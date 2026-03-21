@@ -46,7 +46,7 @@ Moneyco is a mobile application that helps users track income, expenses, and bud
 ### Transaction Management
 - Add income and expense transactions
 - Category, amount, note, and date support
-- Recent transactions on home dashboard
+- Recent transactions on the home dashboard
 - Delete transactions
 
 ### Analytics
@@ -58,7 +58,7 @@ Moneyco is a mobile application that helps users track income, expenses, and bud
 - Set monthly spending limit
 - Set daily expense goal
 - Alert on 90% monthly usage and limit exceed
-- Alert when daily goal is exceeded
+- Alert when the daily goal is exceeded
 
 ### App Experience
 - Dark and light mode
@@ -76,7 +76,4 @@ Moneyco is a mobile application that helps users track income, expenses, and bud
 | **Backend** | Firebase Authentication + Cloud Firestore |
 | **State Management** | Provider |
 | **Charts** | fl_chart |
-| **Platform Support** | Android, iOS, Web, Desktop |
-
-- Flutter framework
-- Course instructors and mentors
+| **Platform Support** | Android |
