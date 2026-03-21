@@ -2,7 +2,7 @@
 
 > A modern personal money management app built with Flutter
 
-Software Development I (Fifth Semester)  
+For bdapps
 **This project was developed with assistance from AI tools**
 
 ---
